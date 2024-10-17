@@ -10,6 +10,7 @@ function MapComponent() {
     // Fetch house price data from Flask
     axios.get('http://localhost:5000/house-prices')
       .then(response => {
+        
         setLocations(response.data);
       })
       .catch(error => {

@@ -6,6 +6,7 @@ import seaborn as sns
 file_path = 'housing_data.csv'  # Update the path accordingly
 housing_data = pd.read_csv(file_path)
 
+
 # Data Preprocessing: Dropping unnecessary columns
 housing_data_cleaned = housing_data.drop(columns=['street', 'city', 'statezip', 'country', 'date'])
 
